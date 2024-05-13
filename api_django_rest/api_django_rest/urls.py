@@ -23,6 +23,6 @@ router = routers.DefaultRouter()
 router.register(r'categories', CategoryViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include(router.urls))
+    path(r'admin/', admin.site.urls),
+    path(r'api/', include(router.urls))
 ]
